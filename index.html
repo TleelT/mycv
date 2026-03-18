@@ -2,51 +2,29 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choose Someone</title>
+    <title>อ่านเป็นเก</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@900&display=swap');
         body {
-            background-color: #4a00a0;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            font-family: 'Kanit', sans-serif;
+            background: #000; color: #fff; font-family: 'Prompt', sans-serif;
+            overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;
         }
-        .container { text-align: center; animation: fadeIn 0.8s; }
-        h1 { font-size: 3rem; margin-bottom: 10px; }
-        p { color: #d1b3ff; margin-bottom: 50px; }
-        .button-group { display: flex; gap: 25px; justify-content: center; }
-        .btn {
-            text-decoration: none;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: white;
-            padding: 20px 60px;
-            border-radius: 20px;
-            font-size: 1.5rem;
-            font-weight: 500;
-            transition: 0.3s;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        h1 { font-size: 5rem; text-transform: uppercase; margin: 0; background: linear-gradient(90deg, #ff00ff, #00ffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: shake 0.5s infinite; }
+        .btn-group { display: flex; gap: 50px; margin-top: 50px; }
+        .super-btn {
+            padding: 30px 60px; font-size: 2rem; font-weight: 900; border: none; border-radius: 50px; cursor: pointer; transition: 0.2s; text-decoration: none; color: #000; box-shadow: 0 0 50px rgba(255,255,255,0.2);
         }
-        .btn:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-5px);
-            box-shadow: 0 0 25px rgba(180, 100, 255, 0.5);
-        }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .btn-a { background: #00ff00; } .btn-b { background: #ff0055; color: white; }
+        .super-btn:hover { transform: scale(1.2) rotate(5deg); filter: brightness(1.5); box-shadow: 0 0 100px #fff; }
+        @keyframes shake { 0% { transform: translate(1px, 1px) rotate(0deg); } 10% { transform: translate(-1px, -2px) rotate(-1deg); } 100% { transform: translate(1px, 1px) rotate(0deg); } }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Choose to Check Someone</h1>
-        <p>Select a profile to view detail</p>
-        <div class="button-group">
-            <a href="mypageA.html" class="btn">Tle</a>
-            <a href="mypageB.html" class="btn">Wave</a>
-        </div>
+    <p>🥵ระวัง! คุณกำลังเข้าสู่เขตของ🥵</p>
+    <h1>💦เติ้ลหนุ่มโรมัน💦</h1>
+    <div class="btn-group">
+        <a href="mypageA.html" class="super-btn btn-a">กดอันนี้ถ้าอยากตาค้าง</a>
+        <a href="mypageB.html" class="super-btn btn-b">กดอันนี้ถ้าอยากใจสั่น</a>
     </div>
 </body>
 </html>
